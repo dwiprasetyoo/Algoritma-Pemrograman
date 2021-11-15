@@ -1,0 +1,18 @@
+"""
+dwi prasetyo
+065002100011
+fungsi rekrusif
+"""
+def penjumlah(angka=0, jumlah=0, i=1):
+    if(jumlah<=0):
+        return 0
+    else:
+        angka=int(input("masukan bilangan ke-"+str(i)+":"))
+        if (jumlah==1):
+            return angka
+        else:
+            i+=1
+            return angka+penjumlah(angka,jumlah-1,i)
+total=int(input("masukan jumlah:"))
+nilai=penjumlah(jumlah=total)
+print("hasil dari penjumlahan adalah:" + str(nilai))
